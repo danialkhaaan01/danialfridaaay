@@ -1,7 +1,7 @@
 <html>
     <head>
       <body>
-        <title>FreakyFriday</title>
+        <title>FEST</title>
         <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
   <style>
  
@@ -24,6 +24,53 @@
     padding-left: 20px;
     color: white;
 }
+.navbar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgb(122, 115, 115);
+}
+.navbar .logo{
+    position: absolute;
+    top:10px;
+    left: -5  px;
+	width: 120x;
+	height: 100px;
+	padding: 20px 100px;
+}
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: rgb(222, 222, 226);
+	border-radius: 2px;
+}
+.wrapper .center{
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+    user-select: none;
+}
 
 h1{
 position: relative;
@@ -41,6 +88,54 @@ div#flyt_horisontal
     animation:eksempel 7s infinite;
     animation-direction:alternate;
 }
+.navbar{
+	position: fixed;
+	height: 80px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgb(122, 115, 115);
+}
+.navbar .logo{
+    position: absolute;
+    top:10px;
+    left: -5  px;
+	width: 120x;
+	height: 100px;
+	padding: 20px 100px;
+}
+.navbar ul{
+	float: right;
+	margin-right: 20px;
+}
+.navbar ul li{
+	list-style: none;
+	margin: 0 8px;
+	display: inline-block;
+	line-height: 80px;
+}
+.navbar ul li a{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	padding: 6px 13px;
+	text-decoration: none;
+	transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: rgb(222, 222, 226);
+	border-radius: 2px;
+}
+.wrapper .center{
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+    user-select: none;
+    
+}
     @-moz-keyframes eksempel { from{left:10px;} to{left:10px;} }
     @-webkit-keyframes eksempel { from{left:10px;} to{left:10px;}}
 @keyframes eksempel{from{left:0px;} to{left:500px;}}
@@ -48,37 +143,43 @@ div#flyt_horisontal
 div#flyt_vertikal{
     
     position: absolute;
-    left: 0px;
+    left:-306px;
     animation: mymove 7s;
     animation-iteration-count: 100;
 }
 
 @keyframes mymove {
-    from {top: -0px;}
+    from {top: -50px;}
     to {top: 300px;}
     
-}
-@keyframes mymove
-{
-
-50%    {transform: rotate(360deg);top:100px;}
-50%    {transform: rotate(-360deg);bottom:500px;}
-50%    {transform: rotate(360deg);right:900px;}
-50%    {transform: rotate(-360deg);left:150px;}
 }
 
 
 
 </style>
+
     
     <center><table>
-
+      
+        </div>
         <div class="box">
             <h1>Du er invitert til Halloweenfest, den 31.10.2020!</h1>
             <img id="halloween" src="halloween.png" width="300px" height="300px"></img>
+
+            <div class="wrapper">
+                <nav class="navbar">
+                    
+                    <ul>
+                        
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="about.html">Om festen</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        
+                    </ul>
+                </nav>
             
 </div>
-<div id="flyt_horisontal"><img src = "./ghost.png" id="ugle" height="150px" width="180px"></div>
+
 <div id="flyt_vertikal"><img src = "./ghost.png" id="ugle" height="150px" width="180px"></div>
 
         </table></center>
